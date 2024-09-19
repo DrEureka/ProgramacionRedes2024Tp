@@ -3,15 +3,63 @@
 Una VLAN, che, es como armar una red virtual dentro de una red física. Imaginate que tenés un edificio con varios pisos y querés que cada
  piso tenga su propia red, pero sin cablear todo de nuevo. Con las VLAN podés hacer eso, separás el tráfico como si fueran redes distintas 
  aunque usen el mismo cableado físico. Re útil para organizar mejor la red y mejorar la seguridad.
-2- ¿Qué es una VPN?  
+
+2- ¿Qué es una VPN? 
+Una VPN (Red Privada Virtual) es una conexión segura a través
+de Internet que permite acceder a una red privada de manera remota. 
+Funciona cifrando los datos que se envían, lo que protege la información y permite navegar de forma más segura.
+
 3-  ¿Qué es una SAN? 
+Una SAN (Red de Área de Almacenamiento) es una red especializada que conecta dispositivos de almacenamiento,
+como discos duros, a servidores. Facilita el acceso rápido y eficiente a grandes volúmenes de datos, 
+ideal para entornos empresariales que requieren alto rendimiento.
+
 4-  Diferencias entre un Hub, Repetidor, Router y SWITCH. Explicar las diferencias. 
+*Hub: Dispositivo simple que conecta varios dispositivos en una red local, pero envía datos a todos los puertos sin discriminación.
+*Repetidor: Amplifica la señal para extender la distancia de una red, pero no filtra ni maneja tráfico.
+*Router: Conecta diferentes redes entre sí (como tu red local a Internet) y gestiona el tráfico de datos, determinando las mejores rutas.
+*Switch: Conecta varios dispositivos en una red local, pero a diferencia del hub, envía datos solo al dispositivo de destino, mejorando la eficiencia.
+
 5- ¿Qué es un protocolo de comunicaciones? 
+Un protocolo de comunicaciones es un conjunto de reglas y estándares que permiten la transmisión de datos entre 
+dispositivos en una red. Define cómo se envían, reciben y procesan los datos para asegurar que la comunicación sea efectiva.
+
 6- Explique TCP/IP y NetBios, resuma sus diferencias. (Acá sí explicar cada uno y sus 
 diferencias)  
+*TCP/IP: Es un conjunto de protocolos de comunicación que permite la interconexión de redes. 
+TCP se encarga de dividir los datos en paquetes y garantizar su entrega, mientras que IP se encarga de direccionar esos paquetes en la red.
+*NetBios: Es un protocolo más antiguo que permite la comunicación en redes locales, 
+facilitando el acceso a recursos compartidos y nombres de dispositivos, pero no es tan escalable como TCP/IP.
+**Diferencias: TCP/IP es más versátil y adecuado para Internet, mientras que NetBios es más específico para redes locales y tiene limitaciones en su uso.
+
 7-  ¿Cómo está formado un paquete de datos en TCP/IP? ¿Qué es un “flag” en un 
 paquete de TCP/IP? 
+Un paquete de datos en TCP/IP se compone de un encabezado (header) y el cuerpo (payload). 
+El encabezado contiene información como direcciones IP de origen y destino, número de secuencia y más.
+Un “flag” en un paquete de TCP/IP es un indicador que señala el estado de la conexión, como el inicio o el cierre de una sesión,
+ayudando a controlar el flujo de datos.
+
 8-  Defina la red según su geografía. Explicar distintas variantes. 
+*LAN (Red de Área Local): Cubre un área pequeña, como una oficina o un hogar.
+*WAN (Red de Área Amplia): Cubre áreas grandes, como ciudades o países, conectando múltiples LANs.
+*MAN (Red de Área Metropolitana): Cubre un área intermedia, como una ciudad.
+
 9- Defina una red según su topología. Explicar distintas variantes. 
+*Topología en estrella: Todos los dispositivos se conectan a un nodo central,
+lo que facilita la gestión y el aislamiento de fallos.
+*Topología en bus: Todos los dispositivos están conectados a un único cable (bus),
+donde los datos viajan en ambas direcciones. Es sencilla y económica, pero si el cable falla, toda la red se ve afectada.
+*Topología en anillo: Los dispositivos se conectan en un circuito cerrado. Los datos se transmiten en una dirección, 
+y cada dispositivo actúa como un repetidor. Si un dispositivo falla, puede interrumpir la comunicación.
+*Topología malla: Cada dispositivo está interconectado con otros, permitiendo múltiples rutas de comunicación.
+Esto proporciona alta redundancia y fiabilidad, ya que si una conexión falla, aún hay otras rutas disponibles.
+*Topología híbrida: Combina diferentes topologías, como estrella-bus o estrella-anillo, 
+adaptándose a las necesidades específicas de la red y optimizando el rendimiento y la gestión.
+
 10-  Explicar el servicio de DHCP.  
+*DHCP (Protocolo de Configuración Dinámica de Host) es un servicio que asigna automáticamente direcciones IP a dispositivos en una red. 
+Facilita la administración de la red al evitar la necesidad de configurar manualmente cada dispositivo, asegurando que no haya conflictos de IP.
+
 11-  Explicar el servicio de DNS. 
+DNS (Sistema de Nombres de Dominio) es un servicio que traduce nombres de dominio (como www.google.com.ar) en direcciones IP (como 142.251.133.227). 
+Permite que los usuarios accedan a sitios web usando nombres fáciles de recordar en lugar de números difíciles de memorizar
