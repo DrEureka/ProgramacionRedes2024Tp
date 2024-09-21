@@ -16,7 +16,7 @@ Un proxy es un intermediario que sirve para peticiones de diversos recursos entr
 El protocolo Spanning Tree es mayormente conocido por sus siglas STP, dentro de un árbol o red de switches, su función principal es la de organizar esta red para evitar bucles y falta de comunicación de datos. Para esto elige un switch principal (root bridge) que va a tener la prioridad más baja y la dirección MAC más baja, luego cada switch de la red va a poder elegir cual es el mejor puerto para comunicarse directamente o más rápido con el switch principal, y si un puerto de un switch está justo en un camino que podría crear un bucle, el STP lo bloquea temporalmente.
 
 15- Explicar el protocolo de comunicaciones OSPF.
-
+Este protocolo (Open Shortest Path First) se utiliza en redes que son grandes ya que este protocolo ayuda a encontrar caminos que son más cortos para que los datos puedan viajar entre routers de una misma red, el OSPF divide la red en áreas y cada router comparte información con otros routers para que todos tengan un mismo mapa de red, así se mantenga una comunicación más rápida y eficiente dentro de la red. 
 
 16- Explicar el protocolo ARP.
 El protocolo ARP (Address Resolution Protocol) es como un "traductor" que convierte las direcciones IP de Internet en direcciones físicas de los dispositivos que están conectados a una red local (LAN). Una explicación "gráfica" que intenta explicar esto es, por ejemplo, tener 2 dispositivos, A y B, que quieren comunicarse, si están en redes diferentes, utilizan direcciones IP para encontrarse, pero si están en la misma red local, necesitan conocer la "dirección física" de cada uno, entonces acá aparece el protocolo ARP que facilita la comunicación entre estos 2 dispositivos.
@@ -44,13 +44,33 @@ d. Elija un tipo de enlace para los siguientes escenarios:
   3 d. Comunicar dos edificios enfrentados en la misma calle.
 
 a. Tipos de enlace
-• MPLS:
-• LAN to LAN:
-• Microonda:
-• VSAT:
+• MPLS: Es una tecnología de red que agiliza el envío de datos, usando etiquetas en lugar de direcciones completas. Se usa en grandes redes para mejorar la velocidad y eficiencia.
+• LAN to LAN: Conexión directa entre dos redes locales en diferentes ubicaciones, permitiendo que compartan recursos como si estuvieran en la misma red física.
+• Microonda: Tecnología de comunicación inalámbrica que usa ondas de radio de alta frecuencia para transmitir datos a largas distancias, generalmente entre antenas.
+• VSAT: Sistema de comunicación por satélite que usa antenas pequeñas para conectarse a redes remotas o en lugares sin acceso a internet convencional.
 
+b. Dos tipos de enlaces, no mencionados anteriormente:
+• Fibra óptica: Es un tipo de conexión que usa hilos de vidrio o plástico para transmitir datos a través de pulsos de luz. Es extremadamente rápida y confiable, ideal para largas distancias y grandes volúmenes de datos.
+• Bluetooth: Es un tipo de enlace inalámbrico de corto alcance que permite la transmisión de datos entre dispositivos cercanos, como teléfonos móviles, auriculares, y relojes inteligentes.
+
+c. Ranking de enlaces:
+• MPLS: Economía (4), Performance (2), Capacidad (2), Restricciones (1), Distancia (3), Configuración (5)
+• LAN to LAN: Economía (2), Performance (3), Capacidad (3), Restricciones (3), Distancia (5), Configuración (2)
+• Microonda: Economía (5), Performance (4), Capacidad (4), Restricciones (5), Distancia (4), Configuración (3)
+• VSAT: Economía (6), Performance (5), Capacidad (5), Restricciones (4), Distancia (1), Configuración (6)
+• Fibra Óptica: Economía (3), Performance (1), Capacidad (1), Restricciones (2), Distancia (2), Configuración (4)
+• Bluetooth: Economía (1), Performance (6), Capacidad (6), Restricciones (6), Distancia (6), Configuración (1)
+
+d. Enlaces para escenarios:
+  1d. MPLS. Confiabilidad, control de tráfico y buen rendimiento para comunicación y conectividad de varios call centers
+  2d. VSAT. Los pozos petroleros suelen están ubicados en zonas alejadas y remotas y la conexión satelital para conexiones temporales es ideal.
+  3d. Microonda. Ideal para distancias cortas sin la necesidad de utilizar cables.
 
 22- Describir la tecnología LTE.
 LTE (Long Term Evolution) se relaciona comunmente con el 4G, pero no son técnicamente lo mismo, a pesar de que su evolución se produjo en las redes 4G, los datos de LTE se transfieren más rápido y con menor latencia 
 
 23- Explique la solución de Microsoft Teams. Si quieren describir otra solución de otra empresa es también válido.
+Microsoft Teams utiliza principal 2 protocolos para poder realizar llamadas de voz y video y que estas sean seguras, para poder gestionar las llamadas usan el protocolo SIP que ayuda a mantener sesiones de comunicación, el protocolo SRTP se encarga de proteger estas llamadas en tiempo real, cifrando los datos y así sean seguros en la comunicación. Y para todo lo que es documentos o archivos, utilizan CDNs y QoS, esto permite la optimización de la entrega de los archivos (CDN) y haya una gestión de calidad del tráfico (QoS). 
+
+34- ¿Qué experiencia tienen en redes?
+En mi caso no tenga experiencia configurando redes, sí conozco de nombres varios conceptos o elementos como LAN, router, puertos, STP, FTP, etc. Esto porque de más chico solía pasar más tiempo jugando a la computadora y para intentar jugar en una misma red con diferentes amigos, teníamos que rebuscarnos la forma de conectar diferentes dispositivos a una misma red y jugar en LAN, o también intentar abrir los puertos por mi cuenta, entre otras actividades similares. Pero profesionalmente no me ha tocado la oportunidad de tener que rozarme con este tipo de protocolos o conceptos. 
